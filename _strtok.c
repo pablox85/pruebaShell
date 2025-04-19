@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -7,11 +8,29 @@
  * Return: 0 if succes
  */
 
-int main (void){
+int main (void)
+{
 
-	int recorrer = 0;
+	int indice = 0, flagInWord = 0, contadorDeRecorrer = 0;
+	char *recorrer = "( ) hola mundo/putos	<-tabulaso "\" / ";
 	char tab = 9; // tabulacion
 	char esp = 32; // espacio
 
+	while (recorrer[indice] != '\0')	{
+		if (recorrer[indice] != 9 || recorrer[indice] != 32) {
+			if (flagInWord == 0)
+			{
+				contadorDeRecorrer++;
+				flagInWord = 1;
+			}
+			if (recorrer[indice] == 9 || recorrer[indice] == 32) {
+				flagInWord = 0;
+				indice++;
+			}
+
+		}
+		printf ("pablabras: %d"\n, contadorDeRecorrer); //form VS
+		
+	}
 
 }
