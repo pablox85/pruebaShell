@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "name": "WSL",
+            "includePath": [
+                "/usr/bin",
+                "/usr/local/include",
+                "/mnt/c/Users/10053/Desktop/hbtnNEW/pruebaShell"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "browse": {
+                "path": [
+                    "/usr/include",
+                    "/usr/local/include",
+                    "/mnt/c/Users/10053/Desktop/hbtnNEW/pruebaShell"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "compilerPathInCppPropertiesJson": "/mnt/usr/include",
+            "mergeConfigurations": false,
+            "recursiveIncludes": {
+                "reduce": "default",
+                "priority": "afterSystemIncludes",
+                "order": "depthFirst"
+            }
+        },
+        {
+            "name": "wll",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ]
+        }
+    ],
+    "version": 4
+}
